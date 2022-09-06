@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ondeck</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <img src="./assets/Logo.svg" alt="Logo">
+            <nav>
+                <ul>
+                    <li id="Products">Products</li>
+                    <li>Challenges</li>
+                    <li>Resources</li>
+                    <li>Other links</li>
+                </ul>
+            </nav>
+            <div class="derecha">
+                <div id="like-li">Sign In</div>
+                <div class="boton">Try for free</div>
+            </div>
+            <div id="hidden-div">
+                <div id="hidden-header">
+                    PRODUCTS
+                    <img src="./assets/Close.svg" alt="Close" id="equis"/>
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-image">
+                        <img src="./assets/Spense_Icon.svg" alt="Spense"/>
+                    </div>
+                    <div class="hidden-text-box">
+                        <div class="hidden-title">Spense</div>
+                        <div class="hidden-text">Spense is a landing page for writers. Great for practicing
+                        absolute positioning and flex layouts.</div>
+                    </div>
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-image">
+                        <img src="./assets/Fiber_Icon.svg" alt="Fiber"/>
+                    </div>
+                    <div class="hidden-text-box">
+                        <div class="hidden-title">Fiber Landing Page</div>
+                        <div class="hidden-text">An online portfolio generator. Great for practice flex/grid 
+                        layouts, and absolute positioning.</div>
+                    </div>
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-image">
+                        <img src="./assets/Gradie_Icon.svg" alt="Gradie"/>
+                    </div>
+                    <div class="hidden-text-box">
+                        <div class="hidden-title">Gradie Sign Up Page</div>
+                        <div class="hidden-text">Gradie is a simple sign up page, great to practice centering
+                        layouts.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="sandwich"><img src="./assets/Menu.svg" alt="Menu"/></div>
+        </header>
+        <div class="content">
+            <article>
+                <h1>Ondeck is your remote <span style="color:#F7B300;">conference calling tool</span></h1>
+                <p>Ondeck is a service that allows you to create beautiful, online,
+                 and encrypted video call for you and your remote team.</p>
+                <div class="boton">Try for free</div>
+                <div class="ratings">
+                    <p>5.0 Rating based on reviews from:</p>
+                    <img src="./assets/Capterra Logo.svg" alt="Capterra"/>
+                    <img src="./assets/AlternativeTo Logo.svg" alt="Alternative"/>
+                    <img src="./assets/shopify_mini.svg" alt="ShopifyMini"/>
+                </div>
+            </article>
+            <aside>
+                <img src="./assets/Hero Image.png" alt="Hero" width="50%">
+            </aside>
+        </div>
+        <footer>
+            <div class="addendum">Trusted by 3+ million people at companies like</div>
+            <div class="addendum-ads">
+                <img src="./assets/Netflix Logo.svg" alt="Netflix"/>
+                <img src="./assets/Shopify Logo.svg" alt="Shopify"/>
+                <img src="./assets/Spotify Logo.svg" alt="Spotify"/>
+                <img src="./assets/Walmart Logo.svg" alt="Walmart"/>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            const menu = document.getElementById('Products');
+            const hid = document.getElementById('hidden-div');
+            const sandwich = document.getElementById('sandwich');
+            const equis = document.getElementById('equis');
+
+            menu.addEventListener('mouseover', function handleMouseOver(){
+                hid.style.display = 'block';
+            });
+
+            hid.addEventListener('mouseover', function handleMouseOver(){
+                hid.style.display = 'block';
+            });
+
+            hid.addEventListener('mouseout', function handleMouseOut(){
+                hid.style.display = 'none';
+            });
+
+            sandwich.addEventListener('mouseover', function handleMouseOut(){
+                hid.style.display = 'block';
+            });
+
+            equis.addEventListener('click', function handleClick(){
+               hid.style.display = 'none'; 
+            });
+
+        </script> 
+    </body>
+</html>

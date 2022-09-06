@@ -1,0 +1,220 @@
+body{
+    background-color: #f3ede5;
+    padding:  2% 10%;
+    font-family: 'Inter', sans-serif;
+    color:  gray;
+    font-size: 11pt;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    padding: 1% 0;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    margin-left: 4%;
+    width: 8vw;
+}
+
+.derecha{
+    display: flex;
+    width: 15vw;
+}
+
+#like-li{
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+    width: 6vw;
+}
+
+.boton{
+    background-color: #133416;
+    color: white;
+    border-radius: 5px;
+    min-width: 120px;
+    max-width: 125px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sandwich{
+    display: none;
+}
+
+#hidden-div {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 11%;
+    left: 27%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 10pt;
+    max-width: 23%;
+}
+
+#hidden-div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 80px;
+  border-width: 0px 10px 10px;
+  border-style: solid;
+  border-color: white transparent;
+  width: 0px;
+}
+
+#hidden-header{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.hidden-box{
+    display: flex;
+}
+
+.hidden-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden-text-box{
+    margin-left: 2%;
+}
+
+.hidden-title{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.hidden-text{
+    margin-bottom: 5%;
+    line-height: 130%;
+}
+
+.content{
+    display:  flex;
+}
+
+article{
+    width: 52%;
+    margin-top: 10%;
+}
+
+h1{
+    color:  black;
+    font-size: 40pt;
+    font-weight: bold;
+    margin: 3% 0 0 0;
+}
+
+p{
+    margin: 3% 0;
+    line-height:150%;
+}
+
+.ratings{
+    display: flex;
+}
+
+.ratings img{
+    margin-left: 2%;
+}
+
+aside{
+    margin: 0;
+    padding: 8% 0;
+    width: 48%;
+    text-align: right;
+}
+
+.addendum{
+    text-align: center;   
+}
+
+.addendum-ads{
+    margin-top: 2%;
+    text-align: center; 
+}
+
+.addendum-ads img{
+    margin-left: 3%;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding: 5% 6%;
+    }
+
+    #sandwich{
+        display: flex;
+    }
+
+    article{
+        width: 100%;
+    }
+
+    .ratings img{
+        margin-left: 4%;
+    }
+
+    aside, nav, #like-li, .derecha > .boton{
+        display: none;
+    }
+
+    h1{
+        font-size: 24pt;
+    }
+
+    p, .addendum{
+        font-size: 10pt;
+    }
+
+    .addendum{
+        margin-top: 15%;
+        margin-bottom: 10%;: 
+    }
+
+    .addendum-ads img{
+        width:  40%;
+        margin-left: 0;
+    }
+
+    .addendum-ads img:nth-of-type(even){
+        margin-left: 8%;
+    }
+
+    #hidden-div {
+        top: 4%;
+        left: 5%;
+        font-size: 9pt;
+        max-width: 70%;
+        padding: 10%;
+    }
+
+    #hidden-div:before{
+        display:  none;
+    }
+
+    #hidden-header{
+        display: flex;
+    }
+}
